@@ -1,0 +1,99 @@
+.bc--top {
+  margin-right: -10px;
+  margin-left: -10px;
+  border-top: 1px solid map-get($colors, grey);
+  border-bottom: 1px solid map-get($colors, grey);
+  padding: 10px;
+}
+
+.bc--bottom {
+  padding: 10px;
+  border-radius: map-get($br, sm);
+  background: map-get($colors, bg-secondary);
+}
+
+.bc__list {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+}
+
+.bc__item {
+  direction: ltr;
+  margin-left: 5px;
+}
+
+.bc__item:last-child {
+  margin-left: 0;
+}
+
+.bc__item:not(:first-child) .bc__link-icon {
+  transform: rotate(90deg);
+}
+
+.bc__link {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: map-get($colors, secondary);
+  transition: map-get($br, sm);
+  cursor: pointer;
+}
+
+.bc__link:hover {
+  color: map-get($colors, accent);
+}
+
+.bc__link-icon {
+  margin-right: 5px;
+  flex-shrink: 0;
+  fill: map-get($colors, grey);
+}
+
+.bc__link:hover .bc__link-icon {
+  fill: map-get($colors, accent);
+}
+
+.bc__link sup {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  padding-left: 5px;
+  font-size: map-get($colors, sm);
+  color: map-get($colors, grey-dark);
+}
+
+.bc__link-text {
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .bc--top {
+    border: none;
+  }
+
+  .bc__link {
+    font-size: map-get($colors, sm);
+  }
+
+  .bc__list {
+    justify-content: flex-end;
+  }
+
+  .bc__link-icon {
+    order: 2;
+    fill: map-get($colors, grey-dark);
+  }
+
+  .bc__item:not(:first-child) .bc__link-icon {
+    transform: rotate(-90deg);
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+
+  .bc__item:first-child .bc__link-icon {
+    display: none;
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+}

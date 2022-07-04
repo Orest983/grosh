@@ -1,0 +1,18 @@
+.chart__tab-btn {
+  border: 1px solid map-get($colors, grey);
+  color: map-get($colors, grey-dark);
+  font-size: map-get($font, sm);
+  padding: 3px 10px;
+  transition: map-get($tr, base);
+
+  &.active, &.active:hover {
+    background-color: map-get($colors, accent);
+    border: 1px solid map-get($colors, accent);
+    color: map-get($colors, white);
+  }
+
+  &:hover {
+    background-color: lighten(map-get($colors, accent), 30%);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,40 @@
+@media(min-width: 768px) {
+  .main-nav {
+    padding: 15px 0;
+    padding-bottom: 5px;
+    background-color: map-get($colors, bg-secondary);
+    border-bottom: 1px solid map-get($colors, grey);
+  }
+
+  .main-nav__center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: map-get($fw, sb);
+  }
+
+  .main-nav__link::after {
+    content: " ";
+    display: block;
+    height: 15px;
+    width: 1px;
+    margin: 0 10px;
+    //background-color: transparentize(map-get($colors, black), 0.7);
+  }
+
+  .main-nav__link:last-child::after {
+    display: none;
+  }
+
+  .main-nav__link-icon {
+    position: relative;
+    top: 3px;
+  }
+}

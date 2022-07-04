@@ -1,0 +1,21 @@
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -5px;
+}
+
+.tag__item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  color: map-get($colors, grey-dark);
+  border: 1px solid map-get($colors, grey);
+  border-radius: map-get($br, lg);
+  font-size: map-get($font, md);
+  transition: map-get($tr, base);
+}
+
+.tag__item:hover {
+  color: map-get($colors, secondary);
+  border: 1px solid map-get($colors, secondary);
+}

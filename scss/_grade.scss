@@ -1,0 +1,72 @@
+$grade-colors: (
+  5: #039200,
+  4: #5A9200,
+  3: #4FAE4D,
+  2: #EEAB00,
+  1: #FF7A00,
+);
+
+.grade__items {
+  display: flex;
+  justify-content: space-between;
+  border-radius: map-get($br, sm);
+  overflow: hidden;
+}
+
+.grade__item-area-top {
+  white-space: nowrap;
+}
+
+.grade__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 8px;
+  color: map-get($colors, white);
+}
+
+.grade__item-number {
+  font-weight: map-get($fw, sb);
+  font-size: map-get($font, md);
+}
+
+.grade__item-quantity {
+  font-size: map-get($font, xs);
+}
+
+.grade__item-icon {
+  fill: map-get($colors, white);
+}
+
+@media (min-width: 1024px) {
+  .grade__item-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .grade__item-number {
+    font-size: map-get($font, xxxl);
+  }
+
+  .grade__item-quantity {
+    font-size: map-get($font, md);
+  }
+}
+
+@each $name, $value in $grade-colors {
+  .grade--#{$name} {
+    background: $value !important;
+  }
+
+  .grade--f-#{$name} {
+    fill:$value !important;
+  }
+
+  .grade--l-#{$name} {
+    $new-color:  rgba($value, 0.5);
+    background: linear-gradient(90deg, $new-color 28.69%, $value 100%) !important;
+    color: map-get($colors, white) !important;
+  }
+}

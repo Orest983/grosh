@@ -1,0 +1,169 @@
+/*rating single star*/
+.rating-ss {
+  display: flex;
+  align-items: center;
+}
+
+.rating-ss--1 .rating-ss__star-active {
+  width: 35%;
+}
+
+.rating-ss--1-5 .rating-ss__star-active {
+  width: 38%;
+}
+
+.rating-ss--2 .rating-ss__star-active {
+  width: 45%;
+}
+
+.rating-ss--2-5 .rating-ss__star-active {
+  width: 50%;
+}
+
+.rating-ss--3 .rating-ss__star-active {
+  width: 60%;
+}
+
+.rating-ss--3-5 .rating-ss__star-active {
+  width: 68%;
+}
+
+.rating-ss--4 .rating-ss__star-active {
+  width: 70%;
+}
+
+.rating-ss--4-5 .rating-ss__star-active {
+  width: 74%;
+}
+
+.rating-ss__star {
+  position: relative;
+  line-height: 0;
+}
+
+.rating-ss__icon.rating-ss__icon--grey {
+  fill: map-get($colors, grey-dark);
+}
+
+.rating-ss__icon.rating-ss__icon--violet-dark {
+  fill: map-get($colors, secondary);
+}
+
+.rating-ss__icon.rating-ss__icon--yellow {
+  fill: map-get($colors, accent);
+}
+
+.rating-ss__star-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: map-get($colors, accent);
+  overflow: hidden;
+  line-height: 0;
+}
+
+.rating-ss__value {
+  font-size: map-get($font, md);
+  font-weight: map-get($fw, sb);
+  color: map-get($colors, secontdary);
+}
+
+/*rating 5 stars*/
+.rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.rating--0 .rating__stars-active {
+  width: 0;
+}
+
+.rating--0-5 .rating__stars-active {
+  width: 10%;
+}
+
+.rating--1 .rating__stars-active {
+  width: 20%;
+}
+
+.rating--1-5 .rating__stars-active {
+  width: 30%;
+}
+
+.rating--2 .rating__stars-active {
+  width: 40%;
+}
+
+.rating--2-5 .rating__stars-active {
+  width: 50%;
+}
+
+.rating--3 .rating__stars-active {
+  width: 60%;
+}
+
+.rating--3-5 .rating__stars-active {
+  width: 70%;
+}
+
+.rating--4 .rating__stars-active {
+  width: 80%;
+}
+
+.rating--4-5 .rating__stars-active {
+  width: 90%;
+}
+
+.rating--5 .rating__stars-active {
+  width: 100%;
+}
+
+.rating__stars {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.rating__stars-img {
+  display: block;
+  width: 115px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  background-color: inherit;
+}
+
+.rating--size-md .rating__stars-img {
+  width: 80px;
+}
+
+.rating--size-sm .rating__stars-img {
+  width: 70px;
+}
+
+.rating--size-xs .rating__stars-img {
+  width: 40px;
+}
+
+.rating__stars-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  background: inherit;
+  overflow: hidden;
+}
+
+.rating__link {
+  margin-left: 5px;
+  font-size: map-get($font, sm);
+  font-weight: map-get($fw, sb);
+  transition: map-get($tr, base);
+}
+
+.rating__link:hover {
+  color: map-get($colors, accent);
+}

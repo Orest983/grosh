@@ -1,0 +1,16 @@
+.ser__scrolling-card {
+  max-width: 150px;
+  width: 40%;
+  padding-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .mod {
+    padding: 0 10px
+  }
+
+  .ser__scrolling-card {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}

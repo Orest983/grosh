@@ -1,0 +1,82 @@
+.pagination__center {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0 3px;
+  border-radius: map-get($br, sm);;
+  transition: map-get($tr, base);
+  background: map-get($colors, bg-secondary);
+  color: map-get($colors, secondary);
+}
+
+.pagination__link.active,
+.pagination__link:hover {
+  background: map-get($colors, secondary);
+  color: map-get($colors, white);
+}
+
+.pagination__link.delimiter:hover {
+  background: map-get($colors, grey);
+  color: map-get($colors, secondary);
+}
+
+.pagination__btn {
+  position: relative;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  border-radius: map-get($br, sm);
+  background-color: map-get($colors, bg-secondary);
+  font-size: map-get($font, md)
+}
+
+.pagination__btn:hover {
+  background-color: map-get($colors, secondary);
+  color: map-get($colors, white);
+}
+
+.pagination__btn:hover svg {
+  fill: map-get($colors, white);
+}
+
+.pagination__btn svg {
+  position: absolute;
+  top: 50%;
+}
+
+.pagination__btn--prev svg {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.pagination__btn--prev span {
+  padding-left: 15px;
+}
+
+.pagination__btn.disabled:hover,
+.pagination__btn.disabled {
+  color: map-get($colors, grey-dark);
+  background-color: map-get($colors, bg-secondary);
+  cursor: default;
+}
+
+.pagination__btn.disabled:hover svg,
+.pagination__btn.disabled svg {
+  fill: map-get($colors, grey);
+}
+
+.pagination__btn--next span {
+  padding-right: 15px;
+}
+
+.pagination__btn--next svg {
+  transform: translateY(-50%) rotate(-90deg);
+  right: 10px;
+}

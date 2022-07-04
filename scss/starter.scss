@@ -9,6 +9,24 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
+$enable-responsive-font-sizes: true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1330px,
+  xxl: 1900px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1330px,
+  xxl: 1610px
+);
 
 //
 // Bring in Bootstrap
@@ -17,6 +35,7 @@
 // Option 1
 //
 // Import all of Bootstrap's CSS
+
 
 // @import "bootstrap/scss/bootstrap";
 
@@ -78,13 +97,42 @@ $success: #7952b3;
 // Custom styles
 //
 
-@import "icon-list";
+@use "sass:map";
+@use "color:map";
+
+@import "theme";
+@import "gw";
+@import "reaction";
+@import "buttons";
+@import "bc";
+@import "main-nav";
+@import "header";
+@import "footer";
+@import "rating";
+@import "scrolling";
+@import "tabmenu";
+@import "pr";
+@import "tag";
+@import "pagination";
+@import "chart";
+@import "ser";
+@import "mod";
+@import "grade";
+@import "review";
+@import "cmt";
+@import "qa";
+@import "char";
+@import "b-nav";
+@import "prod";
+@import "video";
+
 
 body {
-  padding: 3rem 1.5rem;
+
 }
 
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
 }
+

@@ -1,0 +1,15 @@
+.gw {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+}
+
+.gw__number {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-weight: map-get($fw, sb);
+  font-size: map-get($font, md);
+  color: map-get($colors, white);
+}

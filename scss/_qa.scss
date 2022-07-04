@@ -1,0 +1,61 @@
+.qa__scrolling-card {
+  flex-basis: 80%;
+  max-width: 290px;
+  padding: 10px;
+  border: 1px solid map-get($colors, grey);
+}
+
+.qa__action-center {
+  display: flex;
+  padding: 0 10px;
+}
+
+.qa__item-area-q {
+  margin-bottom: 30px;
+}
+
+.qa__item-area-a {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.qa__item-area-a:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .qa {
+    margin: 0 auto;
+    padding: 0 var(--screen-pd);
+    max-width: var(--max-width);
+  }
+
+  .qa__scrolling-card {
+    border: none;
+    max-width: 50%;
+  }
+
+  .qa__action {
+    max-width: 500px;
+  }
+
+  .qa__scrolling-card {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .qa__scrolling-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .qa__action .btn {
+    margin-right: 10px;
+  }
+
+  .qa__action-center {
+    display: flex;
+    padding: 0;
+  }
+
+}

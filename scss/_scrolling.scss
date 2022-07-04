@@ -1,0 +1,24 @@
+.scrolling {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling__card {
+  flex: 0 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .scrolling {
+    overflow-x: unset;
+  }
+
+  .scrolling__card {
+    display: block;
+  }
+}

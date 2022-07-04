@@ -1,0 +1,79 @@
+.b-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 84px;
+  background: linear-gradient(180deg, rgba(89, 72, 197, 0) 13.69%, rgba(89, 72, 197, 0.75) 100%);
+}
+
+.b-nav__center {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -8px;
+  height: 56px;
+  width: 100%;
+  padding: 0;
+  background: map-get($colors, white);
+  border-top-left-radius:  map-get($br, sm);
+  border-top-right-radius: map-get($br, sm);
+}
+
+.b-nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+}
+
+.b-nav__link--price {
+  width: 64px;
+  height: 64px;
+  margin-top: -8px;
+  border-radius: 500px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFE600 0%, #FFB800 100%);
+  border: 6px solid map-get($colors, white);
+  transition: map-get($tr, base);
+}
+
+.b-nav__link-text {
+  font-size: map-get($font, xxs);
+  transition: map-get($tr, base);;
+}
+
+.b-nav__link:hover .b-nav__link-text {
+  color: map-get($colors, accent);
+}
+
+.b-nav__link--price .b-nav__link-text {
+  color: map-get($colors, black);
+  font-weight: map-get($fs, sb)
+}
+
+.b-nav__link-icon {
+  fill: map-get($colors, secondary);
+  margin-bottom: 3px;
+  transition: map-get($tr, base);;
+}
+
+.b-nav__link:hover .b-nav__link-icon {
+  fill: map-get($colors, accent);
+}
+
+.b-nav__link--price .b-nav__link-icon {
+  fill: map-get($colors, black);
+  margin-top: 5px;
+}
+
+.b-nav__link--price:hover .b-nav__link-icon {
+  fill: map-get($colors, black);
+}
+
+.b-nav__link--price:hover .b-nav__link-text {
+  color: map-get($colors, primary);
+}

@@ -1,0 +1,54 @@
+.reaction {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: map-get($font, md);
+}
+
+.reaction__title {
+  margin-right: 10px;
+}
+
+.reaction__action {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reaction__action--like {
+  margin-right: 10px;
+}
+
+.reaction__action--like.active .reaction__icon,
+.reaction__action--like.active .reaction__count,
+.reaction__action--like:hover .reaction__icon,
+.reaction__action--like:hover .reaction__count {
+  fill: map-get($colors, green);
+  color: map-get($colors, green);
+}
+
+.reaction__action--dis.active .reaction__icon,
+.reaction__action--dis.active .reaction__count,
+.reaction__action--dis:hover .reaction__icon,
+.reaction__action--dis:hover .reaction__count {
+  fill: map-get($colors, red);
+  color: map-get($colors, red);
+}
+
+.reaction__icon {
+  margin-right: 5px;
+  fill: map-get($colors, grey);
+  transition: map-get($tr, base);
+}
+
+.reaction__action--dis .reaction__icon {
+  position: relative;
+  bottom: -5px;
+}
+
+.reaction__action--like {
+  color: map-get($colors, green);
+}
+
+.reaction__action--dis {
+  color: map-get($colors, red);
+}

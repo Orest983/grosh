@@ -1,0 +1,37 @@
+.video__scrolling-card {
+  flex-basis: 80%;
+  max-width: 215px;
+  padding-left: 10px;
+}
+
+.video__link {
+  display: block;
+}
+
+.video__item-img {
+  margin-bottom: 15px;
+  border-radius: map-get($br, sm);
+}
+
+.video__item-title {
+  font-size: map-get($font, md);
+  color: map-get($colors, black);
+  transition: map-get($tr, base);
+}
+
+.video__link:hover .video__item-title {
+  color: map-get($colors, accent);
+}
+
+@media (min-width: 1024px) {
+  .video {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1330px;
+  }
+
+  .video__scrolling-card {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}

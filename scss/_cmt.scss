@@ -1,0 +1,149 @@
+.cmt__user {
+  display: flex;
+  align-items: center;
+}
+
+.cmt__area-user {
+  margin-bottom: 15px;
+}
+
+.cmt__area-tags {
+  margin-bottom: 20px;
+}
+
+.cmt__area-body {
+  margin-bottom: 30px;
+}
+
+.cmt__area-user-avatar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.cmt__area-grade {
+  position: relative;
+  top: -5px;
+  margin-right: -10px;
+}
+
+.cmt__user-avatar-img {
+  width: 36px;
+  height: 36px;
+}
+
+.cmt__count {
+  margin-top: 5px;
+  font-size:map-get($font, sm);
+  color: map-get($colors, grey-dark);
+}
+
+.cmt__user-name {
+  font-size: map-get($font, lg);
+  font-weight: map-get($fw, sb);
+}
+
+.cmt__area-meta {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cmt__area-btns {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cmt__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cmt__tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size:map-get($font, sm);
+  border-radius: map-get($br, sm);
+  background: map-get($colors, bg-secondary);
+}
+
+.cmt__tag:first-child {
+  display: none;
+}
+
+.cmt__tag-area-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.cmt__block {
+  margin-bottom: 15px;
+}
+
+.cmt__block-title {
+  margin-bottom: 10px;
+  font-weight: map-get($fw, sb);
+}
+
+.cmt__block-text p {
+  font-size: map-get($font, md);
+  margin-bottom: 5px;
+}
+
+.cmt__block-text p:last-child {
+  margin-bottom: 0;
+}
+
+.cmt__date {
+  margin-top: 5px;
+  font-size: map-get($font, md);
+  color: map-get($colors, grey-dark);
+}
+
+.cmt__ans {
+  margin-right: 20px;
+  font-weight: map-get($font, md);
+}
+
+.cmt__all-ans .cmt__all-ans-icon {
+  fill: map-get($colors, secondary);
+}
+
+.cmt__all-ans:hover .cmt__all-ans-icon {
+  fill: map-get($colors, accent);
+}
+
+.cmt__reaction .reaction__title {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cmt__reaction .reaction__title {
+    display: block;
+    margin-right: 20px;
+    font-size: map-get($font, md);
+  }
+
+  .cmt__reaction .reaction__action--like {
+    margin-right: 15px;
+  }
+
+  .cmt__tag:first-child {
+    display: flex;
+  }
+
+  .cmt__area-grade {
+    display: none;
+  }
+
+  .cmt__area-btns {
+    justify-content: flex-start;
+  }
+}

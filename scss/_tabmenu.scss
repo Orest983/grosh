@@ -1,0 +1,36 @@
+.tabmenu {
+  border-bottom: 1px solid map-get($colors, grey);
+}
+
+.tabmenu__link {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  font-weight: map-get($fw, sb);
+}
+
+.tabmenu__link.active {
+  margin: 0 3px;
+  border-bottom: 2px solid map-get($colors, secondary);
+  color: map-get($colors, black);
+  font-weight: map-get($fw, sb);
+}
+
+.tabmenu__link sup {
+  font-size: map-get($font, sm);
+  color: map-get($colors, grey-dark);
+}
+
+@media (min-width: 1024px) {
+  .tabmenu__scrolling {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1330px) {
+  .tabmenu__scrolling {
+    padding: 0;
+  }
+}

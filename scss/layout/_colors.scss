@@ -1,0 +1,21 @@
+$colors: (
+  white: #FFFFFF,
+  black: #000000,
+  grey: #c3c3c3,
+  grey-dark: #888888,
+  green: #198754,
+  red: #E51554,
+  bg-secondary : #F7F6FC,
+  secondary: #5948C5,
+  accent: #FFBF00,
+);
+
+@each $name, $value in $colors {
+  .c-t-#{$name} {
+    color: $value;
+  }
+
+  .c-bg-#{$name} {
+    background-color: $value;
+  }
+}

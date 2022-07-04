@@ -1,0 +1,199 @@
+.review__scrolling-card {
+  flex-basis: 80%;
+  max-width: 40%;
+  min-width: 290px;
+  padding: 10px;
+  border: 1px solid map-get($colors, grey);
+  border-left: none;
+}
+
+.review__area-filter {
+  display: none;
+  margin-left: auto;
+}
+
+.review__area-btn {
+  display: none;
+}
+
+.review__item-exp-block div:first-child {
+  margin-right: 5px;
+}
+
+.review__action-center {
+  display: flex;
+}
+
+.review__action-center a {
+  flex-grow: 1;
+}
+
+.review__action-center a:first-child {
+  margin-right: 5px;
+}
+
+.review__action-center a:last-child {
+  margin-left: 5px;
+}
+
+@media (min-width: 1024px) {
+  .review__area-head {
+    padding: 10px 0;
+    border-top: 1px solid map-get($colors, grey);
+    border-bottom: 1px solid map-get($colors, grey);
+  }
+
+  .review__head {
+    display: flex;
+    align-items: center;
+  }
+
+  .review__area-grade {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+
+  .review__area-btn {
+    display: flex;
+    justify-content: center;
+    min-width: 310px;
+  }
+
+  .review__area-body {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1330px;
+}
+
+  .review__area-scrolling {
+    max-width: 750px;
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+
+  .review__area-filter {
+    min-width: 310px;
+  }
+
+  .review__scrolling-card {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+  }
+
+  .review__scrolling-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .review__scrolling {
+    flex-direction: column;
+  }
+
+  .review__area-filter {
+    display: block;
+    position: relative;
+  }
+
+  .review__area-action {
+    display: none;
+  }
+
+  /* filter */
+  .review__filter {
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-width: 310px;
+    padding: 30px;
+    border: 1px solid map-get($colors, grey);
+    border-radius:map-get($br, sm);
+    background-color: map-get($colors, white);
+  }
+
+  .review__filter .rating__stars-active {
+    background-color: map-get($colors, white);
+  }
+
+  .review__filter label {
+    cursor: pointer;
+  }
+
+  .review__filter-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: map-get($colors, grey-dark);
+    font-size: map-get($font, xl);
+    font-weight: map-get($fw, sb);
+  }
+
+  .review__filter-area-select {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__filter-select-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .review__filter-select-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .review__filter-checkbox {
+    display: none;
+  }
+
+  .review__filter-fake-checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius:map-get($br, sm);
+    border: 1px solid map-get($colors, grey);
+    transition: map-get($tr, base);
+    background-position: center;
+  }
+
+  .review__filter-fake-checkbox:hover {
+    border: 1px solid map-get($colors, secondary);
+    background-color: rgba(map-get($colors, secondary), 10);
+  }
+
+  .review__filter-checkbox:checked ~ .review__filter-fake-checkbox {
+    border: 1px solid map-get($colors, secondary);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='white' %3E%3Cpath d='M12.7071 5.29289C13.0976 5.68342 13.0976 6.31658 12.7071 6.70711L7.70711 11.7071C7.31658 12.0976 6.68342 12.0976 6.29289 11.7071L3.29289 8.70711C2.90237 8.31658 2.90237 7.68342 3.29289 7.29289C3.68342 6.90237 4.31658 6.90237 4.70711 7.29289L7 9.58579L11.2929 5.29289C11.6834 4.90237 12.3166 4.90237 12.7071 5.29289Z'/%3E%3C/svg%3E");
+    background-color: map-get($colors, secondary);
+    background-repeat: no-repeat;
+  }
+
+  .review__filter-area-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .review__filter-area-rating .rating-ss__value {
+    margin-right: 10px;
+    order: -1;
+    font-size: 99px;
+    font-weight: map-get($fw, sb);
+  }
+
+  .review__filter-area-rating .rating-ss__star,
+  .review__filter-area-rating .rating-ss__icon {
+    width: 84px;
+    height: 84px;
+  }
+
+  .review__filter-area-rating .rating-ss__star-active {
+    background: map-get($colors, white);
+  }
+
+  /*    filter end*/
+}

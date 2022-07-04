@@ -1,0 +1,11 @@
+@mixin resp_img_wr($size, $unit) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+
+  max-width: $size+$unit;
+  height: $size+$unit;
+}

@@ -1,0 +1,64 @@
+$font-family-base: 'Roboto', sans-serif;
+
+// transitions
+$tr: (
+  base: all 0.3s,
+);
+
+// Border radius
+$br: (
+  sm: 4px,
+  lg: 8px
+);
+
+@each $name, $value in $br {
+  .c-br-#{$name} {
+    border-radius: $value;
+  }
+}
+
+// font-sizes
+$fs: (
+  8: 8px,
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+);
+
+$font: (
+  xxs: map-get($fs, 8),
+  xs: map-get($fs, 10),
+  sm: map-get($fs, 12),
+  md: map-get($fs, 14),
+  lg: map-get($fs, 16),
+  xl: map-get($fs, 18),
+  xxl: map-get($fs, 24),
+  xxxl: map-get($fs, 32)
+);
+
+@each $name, $value in $font {
+  .c-fs-#{$name} {
+    font-size: $value;
+  }
+}
+
+$fw: (
+  b: 600,
+  sb:500
+);
+
+@each $name, $value in $fw {
+  .c-fw-#{$name} {
+    font-weight: $value;
+  }
+}
+
+@import "layout/mixins";
+@import "layout/colors";
+@import "layout/base";
+@import "layout/grid";

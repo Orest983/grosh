@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+
+  <link rel="stylesheet" href="assets/css/starter.css">
+  <title>Bootstrap npm starter</title>
+</head>
+<body>
+<header class="header c-ptb-15">
+  <div class="container-xl c-container">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col p-0 header__col-logo">
+        <a href="/">
+          <img class="header__logo-img" src="./assets/svg/logo/logo.svg" alt="" width="120" height="35">
+        </a>
+      </div>
+      <div class="col p-0 header__col-cat c-mob-hide c-tab-show">
+        <a class="c-btn c-btn--secondary d-flex align-items-center" href="#">
+          <svg class="c-mr-5" width="24" height="24">
+            <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-catalog"></use>
+          </svg>
+          <span>Каталог</span>
+        </a>
+      </div>
+      <div class="col p-0 header__col-search">
+        <form class="header__search" action="/">
+          <button class="btn header__search-btn">
+            <svg class="header__search-btn-icon" width="18" height="18">
+              <use xlink:href="./assets/svg/sprite-clean.svg#search"></use>
+            </svg>
+          </button>
+          <input class="header__search-input" type="search" name="search" placeholder="Поиск">
+        </form>
+      </div>
+      <div class="col p-0 header__col-location c-mob-hide c-tab-show">
+        <a class="header__location d-flex align-items-center" href="">
+          <svg class="header__location-icon c-mr-5" width="20" height="20">
+            <use xlink:href="./assets/svg/sprite-clean.svg#place"></use>
+          </svg>
+          <span>Москва</span>
+        </a>
+      </div>
+      <div class="col p-0 header__col-action">
+        <div class="header__actions d-flex align-items-end justify-content-between">
+          <a class="header__actions-item c-mob-hide c-tab-show c-mr-15" href="#">
+            <svg class="header__actions-icon" width="24" height="24">
+              <use xlink:href="./assets/svg/sprite-clean.svg#favorite"></use>
+            </svg>
+          </a>
+          <a class="header__actions-item c-mob-hide c-tab-show c-mr-15" href="#">
+            <svg class="header__actions-icon" width="24" height="24">
+              <use xlink:href="./assets/svg/sprite-clean.svg#compare"></use>
+            </svg>
+          </a>
+          <a class="header__actions-item" href="#">
+            <img class="header__actions-img" src="./assets/svg/icons/user-2.svg" width="24" height="24" alt=""
+                 loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="main-nav c-mob-hide c-desk-show">
+  <div class="main-nav__center container-xl">
+    <a class="main-nav__link" href="#">
+      Главная
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Смартфоны</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Чехлы</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Смартфоны</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Стекла</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Умные часы и браслеты</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+    <a class="main-nav__link" href="#">
+      <div class="d-flex align-items-center">
+        <span class="c-mr-10">Наушники и аудиотехника</span>
+        <svg class="main-nav__link-icon" width="10" height="10">
+          <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+        </svg>
+      </div>
+    </a>
+  </div>
+</nav>
+<div class="container-xl ">
+  <div class="bc bc--top">
+    <ul class="bc__list scrolling">
+      <li class="bc__item">
+                        <span class="bc__link js-popup__open">
+                             <svg class="bc__link-icon" width="10" height="10">
+                                <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+                             </svg>
+                            <span class="bc__link-text">Аналоги</span><sup>10</sup>
+                        </span>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Samsung</span><sup>&nbsp;</sup>
+        </a>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Смартфоны</span><sup>2500</sup></a>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Главная</span><sup>&nbsp;</sup></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="c-mb-15"></div>
+<main>
+  <div class="container-xl c-mb-25">
+    <h1 class="mb0">
+      <span class="text-uppercase">Электроника</span>
+      <sup class="c-fs-sm c-t-grey-dark">100 500 товаров</sup></h1>
+  </div>
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+      <div class="col-sm-3 col-lg-2">
+        <a href="#">
+          <div class="c-pa-10 c-br-lg c-bg-bg-secondary c-mb-10">
+            <div class="c-ri-wr c-ri-wr--140">
+              <img src="https://quke.ru/resize/200x200/UserFiles/Landing/products/98344_photos_0.jpeg" alt="" width="146" height="178">
+            </div>
+          </div>
+          <div class="text-center c-fw-sb">Смартфоны</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="container-xl c-tab-hide">
+  <div class="bc bc--bottom">
+    <ul class="bc__list scrolling">
+      <li class="bc__item">
+        <span class="bc__link js-popup__open">
+             <svg class="bc__link-icon" width="10" height="10">
+                <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+             </svg>
+            <span class="bc__link-text">Аналоги</span><sup>10</sup>
+        </span>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Samsung</span><sup>&nbsp;</sup>
+        </a>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Смартфоны</span><sup>2500</sup></a>
+      </li>
+      <li class="bc__item">
+        <a class="bc__link" href="#">
+          <svg class="bc__link-icon" width="10" height="10">
+            <use xlink:href="./assets/svg/sprite-clean.svg#arrow"></use>
+          </svg>
+          <span class="bc__link-text">Главная</span><sup>&nbsp;</sup></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="c-mb-30"></div>
+<footer class="footer c-ptb-20">
+  <div class="container-xl c-mob-hide c-tab-show">
+    <div class="d-flex">
+      <div class="footer__col footer__col-1">
+        <div class="d-flex">
+          <ul class="footer__nav c-mr-15">
+            <li class="c-fs-md c-fw-b c-mb-10">Магазин</li>
+            <li class="c-fs-md c-mb-10"><a href="#">О компании</a></li>
+            <li class="c-fs-md c-mb-10"><a href="#">Контакты</a></li>
+            <li class="c-fs-md c-mb-10"><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+          <ul class="footer__nav c-mr-15">
+            <li class="c-fs-md c-fw-b c-mb-10">Полезная информация</li>
+            <li class="c-fs-md c-mb-10"><a href="#">О компании</a></li>
+            <li class="c-fs-md c-mb-10"><a href="#">Контакты</a></li>
+            <li class="c-fs-md c-mb-10"><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__col footer__col-2">
+        <a class="footer__logo c-mb-10" href="/">
+          <img class="footer__logo-img" src="./assets/svg/logo/logo.svg" alt="" width="120" height="35">
+        </a>
+        <div class="c-grey-2 c-fs-md text-center c-t-grey-dark">© Grosh.ru, 2022</div>
+      </div>
+      <div class="footer__col footer__col-3">
+        <div class="social">
+          <div class="c-fs-md c-fw-b c-mb-10">Социальные сети</div>
+          <div class="social-items d-flex align-items-center">
+            <a class="social-item d-block c-mr-15" href="#">
+              <svg class="social-icon" width="30" height="30">
+                <use xlink:href="./assets/svg/sprite-clean.svg#youtube"></use>
+              </svg>
+            </a>
+            <a class="social-item d-block c-mr-15" href="#">
+              <svg class="social-icon" width="30" height="30">
+                <use xlink:href="./assets/svg/sprite-clean.svg#vk"></use>
+              </svg>
+            </a>
+            <a class="social-item d-block c-mr-10" href="#">
+              <svg class="social-icon" width="30" height="30">
+                <use xlink:href="./assets/svg/sprite-clean.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl c-tab-hide">
+    <div class="d-flex flex-column justify-content-center align-items-center c-mb-30">
+      <a class="c-fs-md c-mb-10" href="#">Полная версия сайта</a>
+      <a class="c-fs-md c-mb-10" href="#">Конфиденциальность</a>
+      <a class="c-fs-md" href="#">Вопросы и пожелания по сайту</a>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="c-grey-2 c-fs-md">© Grosh.ru, 2022</div>
+      <a class="d-flex align-items-center" href="#">
+        <span class="c-mr-10 c-fw-sb text-uppercase">Наверх</span>
+        <svg width="15" height="20">
+          <use xlink:href="./assets/svg/sprite-clean.svg#scroll-top"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<div class="c-tab-hide">
+  <div class="b-nav">
+    <div class="b-nav__center">
+      <a class="b-nav__link" href="#">
+        <svg class="b-nav__link-icon" width="23" height="22">
+          <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-catalog"></use>
+        </svg>
+        <div class="b-nav__link-text">
+          Каталог
+        </div>
+      </a>
+      <a class="b-nav__link" href="#">
+        <svg class="b-nav__link-icon" width="23" height="22">
+          <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-chars"></use>
+        </svg>
+        <div class="b-nav__link-text">
+          Характеристики
+        </div>
+      </a>
+      <a class="b-nav__link b-nav__link--price" href="#">
+        <svg class="b-nav__link-icon" width="23" height="23">
+          <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-price"></use>
+        </svg>
+        <div class="b-nav__link-text">
+          Цены
+        </div>
+      </a>
+      <a class="b-nav__link" href="#">
+        <svg class="b-nav__link-icon" width="23" height="22">
+          <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-comment"></use>
+        </svg>
+        <div class="b-nav__link-text">
+          Отзывы
+        </div>
+      </a>
+      <a class="b-nav__link" href="#">
+        <svg class="b-nav__link-icon" width="23" height="22">
+          <use xlink:href="./assets/svg/sprite-clean.svg#b-nav-question"></use>
+        </svg>
+        <div class="b-nav__link-text">
+          Вопросы
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script type="module" src="assets/js/starter.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/prod-gal-slider.js"></script>
+<script src="/assets/js/chart.js"></script>
+
+</body>
+</html>

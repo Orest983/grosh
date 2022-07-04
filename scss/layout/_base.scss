@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+svg {
+  //transition: map-get($tr, base);
+  //fill: hsl(var(--c-violet));
+}
+
+a:hover svg {
+  //fill: hsl(var(--c-orange));
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  width: 100%;
+}
+
+h1, .h1 {
+  position: relative;
+  @include font-size(1.7rem);
+}
+
+h1 sup, .h1 sup {
+  position: relative;
+  top: -10px;
+}
+
+h2, .h2 {
+  @include font-size(1.5rem);
+}
+
+h3, .h3 {
+  @include font-size(1.2rem);
+}
+
+h1 sup, .h1 sup,
+h2 sup, .h2 sup,
+h3 sup, .h3 sup {
+  position: relative;
+  top: -10px;
+}
+
+input[type="search"]::-moz-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="search"]::-ms-input-placeholder,
+input[type="search"]::placeholder {
+  color: map-get($colors, bg-secondary)
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+a {
+  color: map-get($colors, secondary);
+  text-decoration: none;
+  transition: map-get($tr, base);
+}
+
+a:hover {
+  color: map-get($colors, accent);
+}
+
+svg {
+  fill: map-get($colors, secondary);
+  transition: map-get($tr, base);
+}
+
+a:hover svg {
+  fill: map-get($colors, accent);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.c-img-reset {
+  width: initial;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: var(--fs-reg);
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
